@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Device Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select {
+            padding: 5px;
+            width: 200px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #337ab7;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Device Information</h1>
+    <form action="/get_device_info" method="POST">
+        <label for="device">Select a device:</label>
+        <select name="device" id="device">
+            <option value="camera">Camera</option>
+            <option value="laptop">Laptop</option>
+            <option value="smartphone">Smartphone</option>
+        </select>
+        <input type="submit" value="Get Device Info">
+    </form>
+</body>
+</html>
